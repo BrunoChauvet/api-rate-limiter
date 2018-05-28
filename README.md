@@ -12,5 +12,6 @@ The Rack Middleware `Rack::RateLimiter` maintains a counter of requests sent by 
 Redis is used to persist the counter so the solution can scale horizontaly.
 
 ## Test suite
+![build](https://travis-ci.org/BrunoChauvet/api-rate-limiter.svg?branch=master "TravisCI Build")
 Rspec tests have been implemented to cover different scenarios when reaching the rate limit threshold or entering a new rate limit time window.
 The test suite can be run with the command `rake` and also include static code analysis and code coverage.
